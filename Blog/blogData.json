@@ -1,0 +1,18 @@
+[
+  {
+    "id": "post1",
+    "date": "22.11.2023",
+    "title": "DarkCube Development Update #1",
+    "subtitle": "Die Erstellung eine Webseite",
+    "image": "/Assets/Banner.png",
+    "content": "<h1>DarkCube Development Update #1</h1>  <h2>Die Erstellung einer Website</h2> <p>Die Erstellung einer Webseite ist ein mehrstufiger Prozess, der sowohl Kreativität als auch technisches Know-how erfordert. Zuerst wird ein klares Konzept entwickelt, das die Zielgruppe, den Zweck und die gewünschten Inhalte der Webseite berücksichtigt. Anschließend wird das Design erstellt, das Layout, Farbschema und Schriftarten umfasst, um eine ästhetisch ansprechende und benutzerfreundliche Oberfläche zu schaffen.\n\nDie nächste Phase ist die Entwicklung, bei der der Code geschrieben wird. Hier werden HTML, CSS und möglicherweise JavaScript eingesetzt, um das Design zum Leben zu erwecken und interaktive Elemente einzubinden. Es ist wichtig, die Webseite responsiv zu gestalten, damit sie auf verschiedenen Geräten und Bildschirmgrößen gut funktioniert.\n\nSobald die Seite entwickelt ist, erfolgt das Testing. Dabei werden Fehler gesucht und behoben und die Nutzerfreundlichkeit überprüft. Nach erfolgreichem Testen wird die Webseite veröffentlicht, was den Prozess des Hostings und der Domain-Registrierung beinhaltet.\n\nAbschließend ist die Wartung und Aktualisierung der Webseite entscheidend. Dies umfasst das regelmäßige Aktualisieren von Inhalten, das Überprüfen der Sicherheit und das Anpassen an sich ändernde Webstandards, um die Relevanz und Effizienz der Webseite zu gewährleisten.</p>"
+  },
+  {
+    "id": "post2",
+    "date": "22.11.2023",
+    "title": "DarkCube Development Update #2",
+    "subtitle": "Kes den coolen scheiß endlich zeigen können",
+    "image": "/Assets/Banner.png",
+    "content": "<h1>DarkCube Development Update #2</h1>  <h2>Siehst du wie geil das ist Kes!</h2>  <p>Ja Kes hat es gesehen trololololo</p>"
+  }
+]

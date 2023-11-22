@@ -1,0 +1,256 @@
+/* ------------------------------------------------------------------------  BODY  ------------------------------------------------------------------------*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+:target::before {
+    content: '';
+    display: block;
+    height: 70px; /* Höhe der festen Navbar oder des gewünschten Abstands */
+    margin: -70px 0 0; /* Negativer Margin in der Höhe der Navbar */
+}
+
+:root {
+    --text: #86818d;
+    --text-hover: #b6bcc9;
+    --background: #100f11;
+    --primary: #131215;
+    --secondary: #1F2023;
+    --secondary-high: #323338;
+    --accent: #2C292E;
+    --border: #18171A;
+    --border-hover: #242327;
+    --shadow: 0 3px 5px rgba(0, 0, 0, 0.26);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+/* -----------------------------------------------------------------------  NAVBAR  -----------------------------------------------------------------------*/
+
+
+nav {
+    background-color: var(--background);
+    position: sticky;
+    top: 0;
+    padding-top: 23px;
+    padding-bottom: 15px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    margin-right: 23px;
+}
+
+.nav-btn {
+    margin-left: 23px;
+    background-color: var(--background);
+    color: var(--text);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.nav-btn:hover {
+    color: var(--text-hover);
+    transition: 0.5s;
+}
+
+.logo-container {
+    position: relative;
+    height: 40px; /* Höhe des Containers entsprechend der Höhe der Logos */
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 30px;
+    vertical-align: middle;
+    padding-right: 45px;
+}
+
+.navbar-logo {
+    position: absolute;
+    top: -13px;
+    left: 0;
+    height: 60px; /* Höhe der Logos */
+    min-height: 35px;
+    transition: opacity 1s; /* Sanfter Übergang für die Opacity */
+}
+
+.logo-container:hover .navbar-logo:nth-child(2) {
+    opacity: 0; /* Reduziert die Deckkraft beim Hover */
+}
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------------  MAIN  -----------------------------------------------------------------------*/
+
+
+.text-blog {
+    margin-top: 5vw;
+}
+
+
+
+
+.blog-entry:hover {
+    border: 2px solid var(--border-hover);
+    transition: 0.5s;
+}
+
+.blog-container h2 {
+    font-size: 25px; /* Erhöht die Schriftgröße des h1-Textes */
+}
+
+.blog-container {
+    margin-top: 3vw;
+}
+
+.blog-entry {
+    display: flex;
+    width: 900px;
+    align-items: center;
+    margin-bottom: 1vw;
+    margin-left: auto; /* Zentriert die Boxen horizontal */
+    margin-right: auto; /* Zentriert die Boxen horizontal */
+    border: 2px solid var(--border);
+    background-color: var(--primary);
+    box-shadow: var(--shadow);
+    padding: 25px;
+    box-sizing: border-box; /* Inkludiert Rahmen und Polsterung in der Breitenberechnung */
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.blog-entry .blog-image {
+    flex: 0 0 230px; /* Bildbreite auf 30% der Blog-Eintragsbreite setzen */
+    height: auto;
+    margin-right: 1vw;
+}
+
+.blog-entry .blog-image img {
+    width: 100%; /* Bild füllt den gesamten Bildbereich aus */
+    height: auto;
+    display: block; /* Entfernt zusätzlichen Raum unter dem Bild */
+    border-radius: 5px;
+}
+
+.blog-entry .blog-text {
+    flex: 1; /* Füllt den verbleibenden Raum */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.3vw;
+    box-sizing: border-box; /* Inkludiert Polsterung in der Breitenberechnung */
+    align-items: flex-start; /* Richtet den Text links aus */
+    color: var(--text);
+}
+
+.blog-entry .blog-text .date, .blog-entry .blog-text h2, .blog-entry .blog-text p {
+    margin: 0.3vw 0; /* Einheitliche Ränder für Textelemente */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------------  FOOTER  -----------------------------------------------------------------------*/
+
+
+footer {
+    background-color: var(--background);
+    color: var(--text);
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    text-align: center;
+    margin-top: 10vw;
+}
+
+.footer-trennung {
+    padding-top: 2px;
+    margin-bottom: 4vw;
+    background-color: var(--border);
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-high);
+}

@@ -1,0 +1,535 @@
+/* ------------------------------------------------------------------------  BODY  ------------------------------------------------------------------------*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+:target::before {
+    content: '';
+    display: block;
+    height: 70px; /* Höhe der festen Navbar oder des gewünschten Abstands */
+    margin: -70px 0 0; /* Negativer Margin in der Höhe der Navbar */
+}
+
+:root {
+    --text: #86818d;
+    --text-hover: #b6bcc9;
+    --background: #100f11;
+    --primary: #131215;
+    --secondary: #1F2023;
+    --secondary-high: #323338;
+    --accent: #2C292E;
+    --border: #18171A;
+    --border-hover: #242327;
+    --shadow: 0 3px 5px rgba(0, 0, 0, 0.26);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+/* -----------------------------------------------------------------------  NAVBAR  -----------------------------------------------------------------------*/
+
+
+nav {
+    background-color: var(--background);
+    position: sticky;
+    top: 0;
+    padding-top: 23px;
+    padding-bottom: 15px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    margin-right: 23px;
+}
+
+.nav-btn {
+    margin-left: 23px;
+    background-color: var(--background);
+    color: var(--text);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.nav-btn:hover {
+    color: var(--text-hover);
+    transition: 0.5s;
+}
+
+.logo-container {
+    position: relative;
+    height: 40px; /* Höhe des Containers entsprechend der Höhe der Logos */
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 30px;
+    vertical-align: middle;
+    padding-right: 45px;
+}
+
+.navbar-logo {
+    position: absolute;
+    top: -13px;
+    left: 0;
+    height: 60px; /* Höhe der Logos */
+    min-height: 35px;
+    transition: opacity 1s; /* Sanfter Übergang für die Opacity */
+}
+
+.logo-container:hover .navbar-logo:nth-child(2) {
+    opacity: 0; /* Reduziert die Deckkraft beim Hover */
+}
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------------  HEADER  -----------------------------------------------------------------------*/
+
+.header-image {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+}
+
+.header-image img {
+    width: 80%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #2f2d33;
+    box-shadow: var(--shadow);
+    transition: 1s;
+}
+
+.header-image img:hover {
+    border: 2px solid #4d4a53;
+    transition: 1s;
+}
+  
+.header-text {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+    text-shadow: 0 6px 10px rgba(0, 0, 0, 0.26);
+    pointer-events: none;
+}
+
+.header-text2 {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+    text-shadow: 0 6px 10px rgba(0, 0, 0, 0.26);
+    pointer-events: none;
+}
+
+.header-image-icon {
+    width: 3%;
+    margin-top: 2vw;
+}
+
+
+
+
+
+
+/* -----------------------------------------------------------------------  MAIN  -----------------------------------------------------------------------*/
+
+
+.team-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw;
+    margin-top: 23vh;
+    pointer-events: none;
+}
+
+.text-team {
+    width: 25%;
+    text-align: left;
+    margin-right: 0.3vw;
+}
+
+.text-team h1 {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    color: var(--text-hover);
+}
+
+.text-team p {
+    font-size: 1vw;
+    color: var(--text);
+}
+
+.team-image {
+    width: 20%;
+    height: auto;
+    margin-top: 1vw;
+}
+
+
+
+
+
+.modi-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw;
+    margin-top: 5vh;
+    pointer-events: none;
+}
+
+.text-modi {
+    width: 25%;
+    text-align: left;
+    margin-left: 3vw;
+}
+
+.text-modi h1 {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    color: var(--text-hover);
+}
+
+.text-modi p {
+    font-size: 1vw;
+    color: var(--text);
+}
+
+.modi-image {
+    width: 20%;
+    height: auto;
+    margin-top: 1vw;
+}
+
+
+
+
+
+.mission-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw;
+    margin-top: 5vh;
+    pointer-events: none;
+}
+
+.text-mission {
+    width: 25%;
+    text-align: left;
+    margin-right: 0.3vw;
+}
+
+.text-mission h1 {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    color: var(--text-hover);
+}
+
+.text-mission p {
+    font-size: 1vw;
+    color: var(--text);
+}
+
+.mission-image {
+    width: 20%;
+    height: auto;
+    margin-top: 1vw;
+}
+
+
+
+
+
+
+.teammitglieder h2 {
+    margin-top: 13vw;
+}
+
+.teammitglieder h1 {
+    font-size: 1.7vw;
+    color: var(--text-hover);
+    margin-top: 7vw;
+    pointer-events: none;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1vw;
+    margin-bottom: 18vw;
+    margin-top: 12vw;
+}
+  
+
+.team-box {
+    width: 10vw;
+    height: 16vw;
+    margin: 0 1vw;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    background-color: var(--primary);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.team-box img {
+    width: 70%; /* Smaller width */
+    height: 10vw;
+    object-fit: contain;
+    margin: 1.5vw auto 0;
+    pointer-events: none;
+}
+  
+.team-box-text {
+    text-align: center;
+    font-size: 1vw;
+    margin-top: 1vw;
+}
+
+.team-box-text2 {
+    font-size: 0.8vw;
+}
+
+.team-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1vw;
+    margin-bottom: 20vw;
+    margin-top: 15vw;
+}
+
+
+
+
+
+
+
+
+
+.socials h1 {
+    font-size: 1.7vw;
+    color: var(--text-hover);
+    margin-top: 10vw;
+    margin-bottom: 9vw;
+    pointer-events: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1vw;
+    margin-bottom: 15vw;
+}
+  
+
+.box {
+    width: 10vw;
+    height: 10vw;
+    margin: 0 1vw;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    background-color: var(--primary);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.box img {
+    width: 70%; /* Smaller width */
+    height: 7vw;
+    object-fit: contain;
+    margin: 0 auto; /* Center image horizontally */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-radius: 15px;
+    margin-top: 0.5vw;
+    pointer-events: none;
+}
+  
+.box-text {
+    text-align: center;
+    font-size: 1vw;
+}
+  
+.box:hover {
+    border: 2px solid var(--border-hover);
+    transition: 0.5s;
+}
+  
+
+
+
+.testserver h1 {
+    font-size: 1.7vw;
+    color: var(--text-hover);
+    margin-top: 5vw;
+    margin-bottom: 4.5vw;
+    pointer-events: none;
+}
+
+.testserver {
+    display: flex; /* Flexbox zur Zentrierung */
+    flex-direction: column; /* Elemente vertikal anordnen */
+    align-items: center; /* Zentriert horizontal */
+    justify-content: center; /* Zentriert vertikal */
+}
+
+.testserver-banner-container {
+    position: relative;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    width: 50%;
+    border: 2px solid var(--border);
+    transition: 1s;
+    overflow: hidden;
+    display: flex; /* Flexbox zur Zentrierung */
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center; /* Zentriert vertikal */
+    cursor: pointer;
+}
+
+.testserver-banner-container:hover {
+    border: 2px solid var(--border-hover);
+}
+
+.testserver-banner {
+    width: 100%;
+    height: auto;
+    transition: 1s;
+}
+
+.testserver-banner-container:hover .testserver-banner {
+    filter: blur(0.3vw);
+}
+
+.testserver-banner-container:hover .hover-text {
+    opacity: 1;
+}
+
+.testserver-banner-container:hover .hover-text::after {
+    content: 'Test.DarkCube.eu';
+}
+
+.testserver-banner-container.clicked:hover .hover-text::after {
+    content: 'Copied';
+}
+
+.hover-text, .hover-text::after {
+    transition: opacity 1s ease, content 1s ease;
+}
+
+.testserver-banner-container:not(:hover) .hover-text::after {
+    opacity: 0;
+}
+
+.testserver p {
+    font-size: 1vw;
+    color: var(--text);
+    margin-top: 3vw;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 10;
+    pointer-events: none;
+    font-size: 1.3vw;
+    color: var(--text-hover);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------------  FOOTER  -----------------------------------------------------------------------*/
+
+
+footer {
+    background-color: var(--background);
+    color: var(--text);
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    text-align: center;
+    margin-top: 10vw;
+}
+
+.footer-trennung {
+    padding-top: 2px;
+    margin-bottom: 4vw;
+    background-color: var(--border);
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+	width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+  	background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+ 	background: var(--secondary);
+	border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--secondary-high);
+}

@@ -120,10 +120,6 @@ nav {
     transition: 0.5s;
 }
 
-.blog-container h2 {
-    font-size: 25px; /* Erhöht die Schriftgröße des h1-Textes */
-}
-
 .blog-container {
     margin-top: 3vw;
 }
@@ -137,7 +133,7 @@ nav {
     margin-right: auto; /* Zentriert die Boxen horizontal */
     border: 2px solid var(--border);
     background-color: var(--primary);
-    box-shadow: var(--shadow);
+    text-shadow: var(--shadow);
     padding: 25px;
     box-sizing: border-box; /* Inkludiert Rahmen und Polsterung in der Breitenberechnung */
     border-radius: 10px;
@@ -179,19 +175,117 @@ nav {
 
 
 
+.blog-post-date {
+    text-align: left;
+    max-width: 900px; /* Maximale Breite des Textes */
+    /* Zentriert den Text innerhalb des Elternelements */
+    margin: 0 auto 15px;
+}
+
+.blog-post-text {
+    max-width: 900px; /* Maximale Breite des Textes */
+    margin: 0 auto; /* Zentriert den Text innerhalb des Elternelements */
+    line-height: 1.6; /* Optional: Anpassen der Zeilenhöhe */
+}
 
 
+.blog-post-textpoints {
+    text-align: left;
+    max-width: 900px; /* Maximale Breite des Textes */
+    margin: 0 auto; /* Zentriert den Text innerhalb des Elternelements */
+    padding-left: 50px;
+    font-size: 17px;
+    line-height: 1.6; /* Optional: Anpassen der Zeilenhöhe */
+}
 
 
+.blog-post-text {
+    font-size: 17px; /* Erhöht die Schriftgröße des h1-Textes */
+    text-align: left;
+}
 
+.blog-post-texttitel {
+    color: var(--text-hover);
+    margin-bottom: -110px;
+    font-size: 35px; /* Adjust size as needed */
+    font-weight: bold;
+}
 
+.blog-post-textsubtitel {
+    font-size: 25px;
+    margin-top: 130px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
 
+.blog-post-textbold {
+    font-size: 17px; /* Erhöht die Schriftgröße des h1-Textes */
+    text-align: left;
+    max-width: 900px; /* Maximale Breite des Textes */
+    margin: 20px auto 10px;
+    font-weight: bold;
+    padding-left: 50px;
+}
 
+.blog-post-video {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+.blog-post-video:hover {
+    cursor: pointer;
+}
 
+.blog-post-image:hover {
+    border: 2px solid #4d4a53;
+    cursor: pointer;
+    transition: 0.5s;
+}
 
+.blog-post-image {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
 
+#lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
+#lightbox-image {
+    max-width: 80%;
+    max-height: 80%;
+    border: 2px solid #2f2d33;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#lightbox-image:hover {
+    border: 2px solid #4d4a53;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.blog-post-image, .blog-post-video {
+    width: 895px; /* Passt die Breite an den Container an */
+    display: block; /* Ermöglicht die Zentrierung des Elements */
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; /* Behält das Seitenverhältnis bei */
+    border-radius: 10px;
+    border: 2px solid #2f2d33;
+    background-color: var(--primary);
+    box-shadow: var(--shadow);
+}
 
 
 

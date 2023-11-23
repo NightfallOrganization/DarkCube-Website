@@ -360,14 +360,14 @@ nav {
     justify-content: center;
     align-items: center;
     height: 1vw;
-    margin-bottom: 15vw;
+    margin-bottom: 8.5vw;
 }
   
 
 .box {
-    width: 10vw;
-    height: 10vw;
-    margin: 0 1vw;
+    width: 11vw;
+    height: 8vw;
+    margin: 0.7vw;
     border-radius: 10px;
     border: 2px solid var(--border);
     background-color: var(--primary);
@@ -379,16 +379,43 @@ nav {
 
 .box img {
     width: 70%; /* Smaller width */
-    height: 7vw;
+    height: 5vw;
     object-fit: contain;
-    margin: 0 auto; /* Center image horizontally */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     border-radius: 15px;
-    margin-top: 0.5vw;
+    margin: 0.5vw auto 0;
     pointer-events: none;
 }
-  
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1vw;
+    margin-bottom: 15vw;
+}
+
+.box2 {
+    width: 20vw;
+    height: 8vw;
+    margin: 0.7vw;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    background-color: var(--primary);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.box2 img {
+    width: 70%; /* Smaller width */
+    height: 5vw;
+    object-fit: contain;
+    border-radius: 15px;
+    margin: 0.5vw auto 0;
+    pointer-events: none;
+}
+
 .box-text {
     text-align: center;
     font-size: 1vw;
@@ -397,9 +424,14 @@ nav {
 .box:hover {
     border: 2px solid var(--border-hover);
     transition: 0.5s;
+    cursor: pointer;
 }
-  
 
+.box2:hover {
+    border: 2px solid var(--border-hover);
+    transition: 0.5s;
+    cursor: pointer;
+}
 
 
 .testserver h1 {

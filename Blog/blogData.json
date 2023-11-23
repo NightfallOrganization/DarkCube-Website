@@ -9,7 +9,8 @@
       {"type": "texttitel", "value": " "},
       {"type": "textsubtitel", "value": " "},
       {"type": "date", "value": "22. November 2023"},
-      {"type": "text", "value": ""}
+      {"type": "image", "value": "/Assets/Banner.png"},
+      {"type": "video", "value": "/Assets/Video.mp4"}
     ]
   }
 ]
